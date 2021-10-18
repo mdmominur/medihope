@@ -14,5 +14,15 @@ code {
 }
 
 .text-brand{
-  color: #7fffc3;
+  color: #00DBC3;
+}
+.bg-brand{
+  background-color: #00DBC3;
+}
+
+.text-brand-2{
+  color: #525252;
+}
+.bg-brand-2{
+  background-color: #525252;
 }

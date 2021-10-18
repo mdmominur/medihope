@@ -1,0 +1,13 @@
+.info-top{
+    padding: 10px 35px;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.banner-pragraph{
+    margin: 0 20px;
+    border-radius: 30px;
+    position: relative;
+    top: -38px;
+    z-index: -99;
+}
