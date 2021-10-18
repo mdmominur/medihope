@@ -26,3 +26,26 @@ code {
 .bg-brand-2{
   background-color: #525252;
 }
+
+.brand-heading{
+  text-align: center;
+}
+
+.brand-heading span{
+  border-bottom: 3px solid #00DBC3;
+  display: inline-block;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.btn-brand{
+  border: none;
+  background-color: #00DBC3;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 30px;
+}
+
+.btn-brand:active{
+  background-color: #00ffe1;
+}

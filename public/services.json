@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "icon": "far fa-eye",
+    "title": "Eye Care",
+    "description": "A business entity that provides inpatient or outpatient testing or treatment of human disease or dysfunction; dispensing of drugs or medical devices for treating human disease or dysfunction.A procedure performed on a person for diagnosing or treating a disease."
+}, {
+    "id": 2,
+    "icon": "fas fa-user-md",
+    "title": "Medical Checkup",
+    "description": "A business entity that provides inpatient or outpatient testing or treatment of human disease or dysfunction; dispensing of drugs or medical devices for treating human disease or dysfunction.A procedure performed on a person for diagnosing or treating a disease."
+}, {
+    "id": 3,
+    "icon": "fas fa-tooth",
+    "title": "Dental Care",
+    "description": "A business entity that provides inpatient or outpatient testing or treatment of human disease or dysfunction; dispensing of drugs or medical devices for treating human disease or dysfunction.A procedure performed on a person for diagnosing or treating a disease."
+}, {
+    "id": 4,
+    "icon": "fas fa-heart",
+    "title": "Cardiology",
+    "description": "A business entity that provides inpatient or outpatient testing or treatment of human disease or dysfunction; dispensing of drugs or medical devices for treating human disease or dysfunction.A procedure performed on a person for diagnosing or treating a disease."
+}, {
+    "id": 5,
+    "icon": "fas fa-vials",
+    "title": "Laboratory Service",
+    "description": "A business entity that provides inpatient or outpatient testing or treatment of human disease or dysfunction; dispensing of drugs or medical devices for treating human disease or dysfunction.A procedure performed on a person for diagnosing or treating a disease."
+}, {
+    "id": 6,
+    "icon": "fas fa-syringe",
+    "title": "Vaccination",
+    "description": "\n         A business entity that provides inpatient or outpatient testing or treatment of human disease or dysfunction; dispensing of drugs or medical devices for treating human disease or dysfunction.A procedure performed on a person for diagnosing or treating a disease."
+}]

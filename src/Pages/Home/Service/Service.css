@@ -1,0 +1,12 @@
+.service{
+    cursor: pointer;
+    background-color: #fff;
+    transition: all .5s ease;
+}
+.service:hover{
+    background-color: #EDFEFB;
+}
+
+.service i{
+    font-size: 100px;
+}
