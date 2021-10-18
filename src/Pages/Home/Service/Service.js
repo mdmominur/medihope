@@ -1,9 +1,10 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css';
 
 const Service = ({service}) => {
-    const {icon, title, description} = service;
+    const {id, icon, title, description} = service;
     return (
         <Col>
             <div className="shadow p-4 rounded service">
@@ -13,7 +14,9 @@ const Service = ({service}) => {
                 <div className="mt-4">
                     <h4>{title}</h4>
                     <p>{description}</p>
-                    <button className="btn-brand">SEE MORE</button>
+                    <Link to={`/service/${id}`}>
+                        <button className="btn-brand">SEE MORE</button>
+                    </Link>
                 </div>
             </div>
         </Col>
