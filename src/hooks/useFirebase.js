@@ -98,6 +98,7 @@ const useFirebase = () => {
         }
     }
 
+    //signout
     const logout = () => {
         setIsloading(true);
         signOut(auth)
@@ -105,6 +106,7 @@ const useFirebase = () => {
         .finally(()=> setIsloading(false));
     }
 
+    //onAuthStateChanged
     useEffect(()=>{
         const unsubscribed =  onAuthStateChanged(auth, (user) => {
             if(user){

@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Register from './Pages/Register/Register';
+import Footer from './Pages/Shared/Header/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import SingleService from './Pages/SingleService/SingleService';
 
@@ -33,6 +34,7 @@ function App() {
               <Register></Register>
             </Route>
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>

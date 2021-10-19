@@ -40,7 +40,7 @@ const Login = () => {
     }
    
     return (
-        <div className="d-flex justify-content-center mt-5">
+        <div className="d-flex justify-content-center mt-5 min-vh-100">
             <div className="col-10 col-lg-4">
                 <div className="shadow rounded p-4 p-md-5">
                     <h4 className="text-brand">Please Login</h4>
