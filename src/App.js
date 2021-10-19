@@ -8,6 +8,7 @@ import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import NotFound from './Pages/NotFound/NotFound';
 import Register from './Pages/Register/Register';
 import Footer from './Pages/Shared/Header/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>
