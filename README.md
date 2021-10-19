@@ -1,6 +1,6 @@
 # Getting Started with Medihope Health care
 
-Website Link: https://medihope-66db5.web.app/
+Website Link: https://medihope-66db5.web.app/home
 
 
 ### `Introduction`
