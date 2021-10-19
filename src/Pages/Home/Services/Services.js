@@ -18,8 +18,6 @@ const Services = () => {
                             {
                                 services.map(ser => <Service key={ser.id} service={ser}></Service>)
                             }
-                            
-                    
                     </Row>
 
             </div>

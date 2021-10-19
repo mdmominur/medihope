@@ -13,6 +13,7 @@ const Header = () => {
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto ps-4 ps-md-0">
                 <Nav.Link as={NavLink} activeClassName="active" to="/home">Home</Nav.Link>
+                <Nav.Link as={NavLink} activeClassName="active" to="/about">About</Nav.Link>
                {
                    user.email 
                    ? <div className="ms-4"><span>{user.displayName}</span> <button className="btn-brand" onClick={logout}>Logout</button></div> 
