@@ -1,13 +1,17 @@
+import { signInWithEmailAndPassword } from '@firebase/auth';
 import React from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../../Context/useAuth';
 
 const Login = () => {
     const {
+        auth,
+        email,
+        password,
         handleSetEmail,
         handleSetPassword,
-        handleEmailLogin,
         handleGoogleSignIn,
+        verifyFields,
         setError,
         error
     } = useAuth();
@@ -25,17 +29,23 @@ const Login = () => {
     }
 
     // Sign in using Email
-    const signInUsingEmail = (e) => {
 
-        if(handleEmailLogin(e)){
-            handleEmailLogin(e)
+     //set email login
+     const handleEmailLogin = (e) => {
+        e.preventDefault();
+        const isValid = verifyFields('login');
+        if(isValid){
+            signInWithEmailAndPassword(auth, email, password)
             .then(res => {
                 history.push(redirect_uri);
             })
             .catch((error) => {
                     const errorCode = error.code;
                     setError(errorCode);
+                    
                   });
+        }else{
+            return false;
         }
     }
    
@@ -45,7 +55,7 @@ const Login = () => {
                 <div className="shadow rounded p-4 p-md-5">
                     <h4 className="text-brand">Please Login</h4>
                     <span className="text-danger fw-bold">{error}</span>
-                    <form onSubmit={signInUsingEmail}>
+                    <form onSubmit={handleEmailLogin}>
                         <input type="email" className="form-control mt-4" placeholder="Your Email" onBlur={handleSetEmail} />
                         <input type="password" className="form-control mt-3" placeholder="Your Password" onBlur={handleSetPassword} /><br />
                         <span>Don't have an account? <Link to="/register" className="text-brand">Register</Link></span><br />

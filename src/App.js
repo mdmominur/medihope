@@ -5,6 +5,7 @@ import './App.css';
 import AuthProvider from './Context/AuthProvider';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
+import Doctors from './Pages/Doctors/Doctors';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login/Login';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
@@ -27,9 +28,12 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute path="/about">
-              <About></About>
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
             </PrivateRoute>
+            <Route path="/about">
+              <About></About>
+            </Route>
             <PrivateRoute path="/contact">
               <Contact></Contact>
             </PrivateRoute>
@@ -42,6 +46,7 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+           
             <Route path="*">
               <NotFound></NotFound>
             </Route>

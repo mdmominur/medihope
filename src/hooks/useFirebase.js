@@ -1,10 +1,11 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, onAuthStateChanged, signOut} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, updateProfile, onAuthStateChanged, signOut} from "firebase/auth";
 import { useEffect, useState } from 'react';
 import { useHistory } from "react-router";
 import initializeAuth from "../Pages/Login/Firebase/firebase.init";
 
 initializeAuth();
 const useFirebase = () => {
+    //initializing states
     const [user, setUser] = useState({});
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -65,16 +66,7 @@ const useFirebase = () => {
 
     }
 
-    //set email login
-    const handleEmailLogin = (e) => {
-        e.preventDefault();
-        const isValid = verifyFields('login');
-        if(isValid){
-           return signInWithEmailAndPassword(auth, email, password)
-        }else{
-            return false;
-        }
-    }
+   
 
     //set email Register
     const handleEmailRegister = (e) => {
@@ -126,17 +118,19 @@ const useFirebase = () => {
         user,
         auth,
         name,
+        email,
+        password,
         logout,
         isLoading,
         handleSetName,
         handleSetEmail,
         handleSetPassword,
         handleSetConfirmPassword,
-        handleEmailLogin,
         handleEmailRegister,
         error,
         setError,
-        updateProfile
+        updateProfile,
+        verifyFields
     };
 }
 

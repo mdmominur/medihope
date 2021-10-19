@@ -10,7 +10,7 @@ const Contact = () => {
                         <h4 className="text-brand-2">Information</h4>
                         <div className="row">
                             <div className="col-md-1">
-                                <i class="fas fa-phone-alt"></i>
+                                <i className="fas fa-phone-alt"></i>
                             </div>
                             <div className="col-md-11">
                             (+064)-342-68382
@@ -18,7 +18,7 @@ const Contact = () => {
                         </div>
                         <div className="row">
                             <div className="col-md-1">
-                            <i class="far fa-envelope"></i>
+                            <i className="far fa-envelope"></i>
                             </div>
                             <div className="col-md-11">
                             info@automation-logistics.com
@@ -27,12 +27,12 @@ const Contact = () => {
 
                         <h4 className="text-brand mt-4">Social links</h4>
                         <div className="social-icons">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram-square"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-dribbble-square"></i></a>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="http://facebook.com"><i className="fab fa-facebook"></i></a>
+                            <a href="http://facebook.com"><i className="fab fa-twitter"></i></a>
+                            <a href="http://facebook.com"><i className="fab fa-instagram-square"></i></a>
+                            <a href="http://facebook.com"><i className="fab fa-linkedin"></i></a>
+                            <a href="http://facebook.com"><i className="fab fa-dribbble-square"></i></a>
+                            <a href="http://facebook.com"><i className="fab fa-pinterest"></i></a>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ const Feature = ({feature}) => {
     return (
         <div className="col-md-6">
             <div className="shadow-lg p-4 rounded">
-                <i style={{ "font-size": "50px", "color": '#00DBC3' }} className={icon}></i>
+                <i style={{ "fontSize": "50px", "color": '#00DBC3' }} className={icon}></i>
                 <h4>{title}</h4>
                 <p>{description}</p>
             </div>
